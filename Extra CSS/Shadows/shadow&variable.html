@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        :root {
+            --primary-color: rgba(0, 0, 0, 0.51);
+        }
+
+        .sections {
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            position: absolute;
+            align-self: flex-start;
+            text-shadow: 2px 2px 3px rgb(132, 143, 220);
+            /*(x-offset,y-offset,blur radius,color**/
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            background: aquamarine;
+            width: 530px;
+            height: 400px;
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 10px rgba(0, 0, 0, 0.44); (x-offset,y-offset,color) */
+            /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.51); (x-offset,y-offset,blur radius,color*/
+            box-shadow: 10px 10px 5px 3px var(--primary-color);
+            /*(x-offset,y-offset,blur radius,spread radius,color*/
+        }
+
+        .box2 {
+            box-shadow: inset 10px 10px 5px 3px var(--primary-color);
+        }
+
+        .box3 {
+            box-shadow: 10px 10px red, 15px 15px var(--primary-color), 20px 20px blue;
+            /*multiple shadows*/
+        }
+
+        h2 {
+            text-shadow: 2px 1.5px 5px var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sections">
+        <h1>This is Section 1</h1>
+        <div class="box1">
+            <img src="https://plus.unsplash.com/premium_photo-1672116453187-3aa64afe04ad?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="img" height="250px">
+            <h2>Welcome to my website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore repellendus ea nostrum, quos
+                voluptate at ex veritatis eaque, fuga minus enim aut qui similique perspiciatis, sapiente facilis rerum
+                accusamus. Quasi?</p>
+        </div>
+    </section>
+    <section class="sections">
+        <h1>This is Section 2</h1>
+        <div class="box2">
+            <img src="https://plus.unsplash.com/premium_photo-1672116453187-3aa64afe04ad?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="img" height="250px">
+            <h2>Welcome to my website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore repellendus ea nostrum, quos
+                voluptate at ex veritatis eaque, fuga minus enim aut qui similique perspiciatis, sapiente facilis rerum
+                accusamus. Quasi?</p>
+        </div>
+    </section>
+    <section class="sections">
+        <h1>This is Section 3</h1>
+        <div class="box3">
+            <img src="https://plus.unsplash.com/premium_photo-1672116453187-3aa64afe04ad?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="img" height="250px">
+            <h2>Welcome to my website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore repellendus ea nostrum, quos
+                voluptate at ex veritatis eaque, fuga minus enim aut qui similique perspiciatis, sapiente facilis rerum
+                accusamus. Quasi?</p>
+        </div>
+    </section>
+</body>
+
+</html>

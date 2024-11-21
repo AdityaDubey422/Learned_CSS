@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+        .section1 {
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            border: 3px solid black;
+        }
+
+        @media (min-width: 0px) and (max-width: 820px) {
+            .section1 {
+                background-color: green;
+            }
+        }
+
+        .section2 {
+            border: 2px solid red;
+            display: flex;
+            gap: 10px;
+        }
+
+        .boxes {
+            height: 300px;
+            width: 300px;
+            background-color: beige;
+            border: 2px solid blue;
+        }
+
+        @media (max-width: 820px) {
+            .section2 {
+                flex-direction: column;
+            }
+        }
+
+        .section3 {
+            display: flex;
+        }
+
+        @media (max-width: 820px) {
+            .section3 {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section1">I am section 1</section>
+    <hr />
+    <section class="section2">
+        <div class="boxes">1</div>
+        <div class="boxes">2</div>
+        <div class="boxes">3</div>
+        <div class="boxes">4</div>
+    </section>
+    <hr>
+    <section class="section3">
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quibusdam molestiae repellendus
+                temporibus. Eius inventore corporis consectetur molestias velit debitis aut ut! Voluptates quibusdam
+                corporis fuga amet reprehenderit architecto quisquam possimus enim dignissimos rerum cum, molestias
+                voluptatem. Laudantium reprehenderit voluptate illum odio blanditiis maxime aliquid facilis
+                exercitationem,
+                et, voluptates excepturi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tenetur voluptatem nihil cupiditate iste
+                sunt
+                exercitationem debitis repudiandae nobis in alias ipsa, quibusdam, iusto totam suscipit beatae dicta
+                blanditiis molestiae, inventore perferendis ad corporis laudantium recusandae. Atque enim rem modi.
+                Error
+                laudantium molestiae accusantium. In quisquam cupiditate corrupti impedit adipisci?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse magnam ab atque ducimus repudiandae
+                similique ea voluptatum distinctio quidem. Tenetur similique quisquam ipsa minus veritatis maiores
+                reprehenderit alias laboriosam odit praesentium eligendi, delectus doloribus tempora pariatur placeat
+                nobis dolorum commodi. Itaque laborum vitae, optio cumque qui amet ipsam reprehenderit sint excepturi
+                eius sit nostrum minima nulla, quos eos saepe quidem corporis nihil dolor harum quis? At minus dolor
+                eius quia magnam architecto ratione quos, facere provident consequuntur temporibus, nemo ullam fuga illo
+                quasi non fugiat sapiente nulla dolores amet similique? Nisi officia et quas quos tenetur iure fuga
+                praesentium.</p>
+        </div>
+        <img src="https://plus.unsplash.com/premium_photo-1672116453187-3aa64afe04ad?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="img" height="300px">
+    </section>
+</body>
+
+</html>

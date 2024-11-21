@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- display property is used to determine whether an element is treated as a block/inline element  -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* display:inline , element will become of type inline
+           setting width/height or top-margin/top-padding not allowed */
+        .box1 {
+            width: 500px;
+            height: 100px;
+            background-color: red;
+            display: inline;
+        }
+
+        /* display:block, element will become of type block */
+
+        .box2 {
+            width: 500px;
+            height: 100px;
+            background-color: burlywood;
+            display: block;
+        }
+
+        /* display:inline-block
+        similar as inline but we can set height and width */
+        .box3 {
+            height: 300px;
+            width: 600px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        .box4 {
+            height: 300px;
+            width: 600px;
+            background-color: pink;
+            display: inline-block;
+        }
+
+        /* with display:none , the element is removed from the document flow 
+        with visibility:hidden , thr element is hidden but its space is reserved */
+        .box5 {
+            display: none;
+        }
+
+        .box6 {
+            visibility: hidden;
+        }
+
+        /* text-align tag  */
+        /* margin:auto is used to align the container horizontally */
+        .box7 {
+            text-align: center;
+            background-color: aqua;
+            margin: auto;
+            width: 900px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* text decoration properties */
+        .box8 {
+            margin: 8px;
+            text-decoration: underline rgb(9, 236, 244) wavy;
+            text-transform: capitalize;
+            font-size: 20px;
+            font-family: "Playfair Display", serif;
+        }
+
+        .box9 {
+            font-size: 15px;
+            font-weight: 900;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellat laborum maiores, at
+        distinctio deleniti, repellendus, tenetur nemo deserunt iste quae. Mollitia quasi, commodi ex dignissimos, iusto
+        et ipsa temporibus consectetur perspiciatis est numquam.</div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet officia repellat minus impedit
+        eos consectetur unde omnis molestiae perspiciatis in.</div>
+    <div class="box3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias iusto totam praesentium
+        doloremque sunt pariatur dicta, fugit quas voluptatem repudiandae.</div><!--
+    --><div class="box4">Lorem ipsum dolor sit ameconsectetuadipisicingelit. Maxime quaerat autem ipsa cupiditatearchitecto
+        maiores voluptatem obcaecati perspiciatis ab enim!</div>
+    <div class="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempore officia deleniti illo ullam
+        vero voluptate molestiae possimus natus et?</div>
+    <div class="box6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, impedit in. Possimus nisi eum,
+        temporibus blanditiis accusantium officia ea! Tenetur.</div>
+    <div class="box7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur saepe veritatis ab a
+        tempore possimus atque culpa repudiandae, dicta nobis, facere quia doloremque itaque odio.</div>
+    <div class="box8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, vel velit ab architecto molestias
+        laboriosam ullam. Libero, soluta mollitia illo expedita adipisci accusantium.</div>
+    <div class="box9">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio officia maxime sapiente eum
+        magnam nemo nisi mollitia officiis soluta voluptas.</div>
+</body>
+
+</html>

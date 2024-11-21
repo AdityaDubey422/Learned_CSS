@@ -1,0 +1,70 @@
+/* Grid part */
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+/* setting background colors of items */
+.container .item:nth-child(1) {
+    background-color: var(--yellow);
+}
+
+.container .item:nth-child(2) {
+    background-color: var(--light-green);
+}
+
+.container .item:nth-child(3) {
+    background-color: var(--red);
+}
+
+#transparent-box {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+#transparent-box::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--light-green);
+    opacity: 0.5;
+    /* background-color: hsl(from var(--light-green) h s l / 50%) */
+}
+
+/* setting background colors of child of transparent box*/
+#transparent-box div:nth-child(1) {
+    background-color: #6400ff;
+}
+
+#transparent-box div:nth-child(2) {
+    background-color: #00ff66;
+}
+
+#transparent-box div:nth-child(3) {
+    background-color: #0058ff;
+}
+
+/* Media query(of grid part) for responsiveness */
+@media (min-width: 750px) {
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    #transparent-box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    #transparent-box div:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+}

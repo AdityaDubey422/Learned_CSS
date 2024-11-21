@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: #414557;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1rem;
+    justify-items: center;  /* har ek item ko uski khud ki cell me horizontally align kar dega*/
+    align-items: center;
+    /* shorthand for justify items and align items is place-items */
+}
+
+.item {
+    /* justify-self: end; (align item in its own cell horizontally,we can use this if we want some cell to be align differently than others ) */
+    /* align-self: center; (align item in its own cell vertically) */
+    /* shorthand for justify self and align self is place-self */
+    height: 100px;
+    width: 100px;
+    background-color: rgb(158, 206, 158);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

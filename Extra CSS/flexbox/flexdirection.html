@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Direction</title>
+    <style>
+      body {
+        border: 4px solid black;
+        height: 700px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+      .box {
+        height: 130px;
+        width: 150px;
+        background-color: blue;
+        font-size: 20pt;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <!-- flex direction main axis and cross axis kaise honge ye decide karta hai -->
+    <!-- flex-direction controls the direction of the main axis and cross axis, which influences other flexbox properties -->
+    <!-- flex direction:row :- it is default value yaha pe main axis and cross axis normal rehte hai (main axis:-left to right , cross axis:- top to bottom)-->
+    <!-- flex-direction:row-reverse :- yaha pe main axis ulta ho jaayega(that is right to left)  -->
+    <!-- flex-direction:column :- isme main axis and cross axis interchange ho jaayenge -->
+    <!-- flex-direction:column-reverse :- isme main axis and cross axis interchanged he rahenge and saath he saath main axis(vertical waali in this case) ki direction ulti ho jaayegi(that is bottom to top) -->
+  </body>
+</html>

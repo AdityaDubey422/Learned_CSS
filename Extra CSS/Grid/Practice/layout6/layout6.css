@@ -1,0 +1,97 @@
+/* Grid part */
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+}
+
+/* setting background colors of items */
+.container .item:nth-child(1),
+.item:nth-child(9) {
+    background-color: var(--red);
+}
+
+.container .item:nth-child(2),
+.item:nth-child(5),
+.item:nth-child(10) {
+    background-color: var(--dark-green);
+}
+
+.container .item:nth-child(3),
+.item:nth-child(7),
+.item:nth-child(12) {
+    background-color: var(--yellow);
+}
+
+.container .item:nth-child(4) {
+    background-color: var(--orange);
+}
+
+.container .item:nth-child(6) {
+    background-color: var(--medium-green);
+}
+
+.container .item:nth-child(8),
+.item:nth-child(11) {
+    background-color: var(--light-green);
+}
+
+/* Media query(of grid part) for responsiveness */
+@media (min-width: 750px) {
+
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .container .item:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .container .item:nth-child(7) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .container .item:nth-child(8) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .container .item:nth-child(9) {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .container .item:nth-child(10) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+
+    .container .item:nth-child(11) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        /* grid-row-start: 5;
+        grid-row-end: 6; */
+    }
+
+    /* .container .item:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+
+    .container .item:nth-child(5) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    } */
+
+}

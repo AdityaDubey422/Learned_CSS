@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <!-- The CSS Flexbox gives a better way to layout,align and distribute space among items in a container -->
+    <style>
+      /* flex properties for parent(flex container)  */
+      /* 1. flex direction: property defines the direction towards which items are laid  */
+      /* 2. flex wrap : can be wrap,no wrap,wrap-reverse */
+      /* 3. justify content : defines alignment along main axis(horizontally) */
+      /* 4. align items: defines alignment along cross axis ( vertically ) */
+      /* 5. align content : align a flex container line when there is extra space in the cross axis */
+      .container {
+        background-color: aqua;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        /* align-content: center; */
+      }
+
+      /* flex porperties for the children (flex items) */
+      /* order:controls the order in which the items appear in flex container  */
+      /* align self: allows default alginment to be overriden for the individual flex items */
+      /* flex grow: defines how much a flex item will grow relative to the rest of the flex item */
+      /* flex shrink: defines how much a flex item will shrink relative to the rest of the flex items */
+      .box1 {
+        height: 234px;
+        /* width: 345px; */
+        background-color: blue;
+        border: 2px solid black;
+        order: 4;
+        /* align-self: flex-end; */
+        flex-grow: 2;
+      }
+      .box2 {
+        height: 234px;
+        /* width: 345px; */
+        background-color: red;
+        border: 2px solid black;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box2">box2b</div>
+      <div class="box2">box2c</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 18px 209px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {
+                background-color: red;
+            }
+
+            header {
+                background-color: blue;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: aqua;
+            }
+
+            header {
+                background-color: rgb(0, 255, 136);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis, hic dolore modi quod pariatur
+        laboriosam officiis aut mollitia nulla lam, natus.</div>
+</body>
+
+</html>

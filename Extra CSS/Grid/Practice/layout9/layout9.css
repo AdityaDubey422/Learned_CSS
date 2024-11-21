@@ -1,0 +1,47 @@
+/* Grid part */
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+/* setting background colors of items */
+.container .item:nth-child(1),.item:nth-child(5) {
+    background-color: var(--yellow);
+}
+
+.container .item:nth-child(2) {
+    background-color: var(--dark-green);
+}
+
+.container .item:nth-child(3) {
+    background-color: var(--light-green);
+}
+
+.container .item:nth-child(4) {
+    background-color: var(--red);
+}
+
+/* Media query(of grid part) for responsiveness */
+@media (min-width: 750px) {
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.7fr 1fr 1fr;
+    }
+
+    .container .item:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .container .item:nth-child(2) {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .container .item:nth-child(3) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+}

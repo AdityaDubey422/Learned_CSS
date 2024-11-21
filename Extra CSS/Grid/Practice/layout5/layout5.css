@@ -1,0 +1,41 @@
+/* GRID SECTION */
+.container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* setting background colors of items */
+.container .item:nth-child(1),.item:nth-child(8),.item:nth-child(13),.item:nth-child(17) {
+    background-color: var(--dark-green);
+}
+
+.container .item:nth-child(2),.item:nth-child(6),.item:nth-child(9),.item:nth-child(16) {
+    background-color: var(--orange);
+}
+
+.container .item:nth-child(3),.item:nth-child(10) {
+    background-color: var(--medium-green);
+}
+
+.container .item:nth-child(4),.item:nth-child(12),.item:nth-child(14) {
+    background-color: var(--red);
+}
+
+.container .item:nth-child(5),.item:nth-child(15),.item:nth-child(18) {
+    background-color: var(--light-green);
+}
+
+.container .item:nth-child(7),.item:nth-child(11) {
+    background-color: var(--yellow);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 750px) {
+
+    /* For grid part */
+    .container {
+        grid-template-rows: repeat(18, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+}

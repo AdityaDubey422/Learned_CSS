@@ -1,0 +1,124 @@
+/* Defining variables */
+:root {
+    --red: #fc6057;
+    --orange: #fd825c;
+    --yellow: #fda061;
+    --light-green: #34daba;
+    --medium-green: #1bc1a1;
+    --dark-green: #01a787;
+    --background-color: #2c3043;
+    --red-circle: #fb5f56;
+    --orange-circle: #fc9f60;
+    --green-circle: #1bc0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px 30px;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color);
+}
+
+/* HEADER SECTION */
+header {
+    height: 2.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circles {
+    display: flex;
+    width: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .circles div:nth-child(1) {
+    background-color: var(--red-circle);
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+header .circles div:nth-child(2) {
+    background-color: var(--orange-circle);
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+header .circles div:nth-child(3) {
+    background-color: var(--green-circle);
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.white {
+    width: 98%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* GRID SECTION */
+.container {
+    height: 97.5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 20px 15px;
+}
+
+/* setting background colors of items */
+.container .item:nth-child(1) {
+    background-color: var(--red);
+}
+
+.container .item:nth-child(2) {
+    background-color: var(--orange);
+}
+
+.container .item:nth-child(3) {
+    background-color: var(--yellow);
+}
+
+.container .item:nth-child(4) {
+    background-color: var(--dark-green);
+}
+
+.container .item:nth-child(5) {
+    background-color: var(--medium-green);
+}
+
+.container .item:nth-child(6) {
+    background-color: var(--light-green);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 750px) {
+
+    /* For grid part */
+    .container {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    /* For header part */
+    .circles {
+        width: 10%;
+    }
+
+    .white {
+        width: 90%;
+    }
+
+}

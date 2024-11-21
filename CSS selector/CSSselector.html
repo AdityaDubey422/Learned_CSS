@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+         h1{          /* element selector */
+            color: red;
+        }
+        div{          /* element selector */
+            background-color: pink;
+        }
+        #first{       /* id selector */
+            background-color: red;
+        }
+        .blue,h3{     /* class selector */
+            color: blue;
+            border: 2px solid black;
+        }
+        section h2{      /* descendant selector */
+            color: aqua;
+        }
+        section > h2{
+            color: rgb(156, 216, 155);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> This is my CSS selector page</h1>
+        <h1>This is another h1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempore numquam accusantium quasi reiciendis
+            ut in praesentium, repellendus officiis, esse, harum qui ipsam vitae tenetur ratione sit dicta. Nobis qui
+            quod dolor quia nemo?</p>
+    </div>
+    <div id="first">
+bg is red
+    </div>
+    <span class="blue">
+This is blue
+    </span>
+    <h3>I am h3</h3>
+    <section>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+        </div>       
+    </section>
+</body>
+</html>
